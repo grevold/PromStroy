@@ -1,5 +1,10 @@
 import s from "./MainPage.module.css";
+import { ParalaxBanner } from "./components/ParalaxBanner";
 
 export function MainPage() {
-  return <div>Главная</div>;
+  return (
+    <div>
+      <ParalaxBanner />
+    </div>
+  );
 }
