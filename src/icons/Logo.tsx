@@ -6,7 +6,6 @@ export function Logo({ className }: Props) {
   return (
     <svg
       className={className}
-      width="428"
       height="110"
       viewBox="0 0 428 110"
       fill="none"
