@@ -41,6 +41,13 @@ export function ParalaxBanner() {
         ></div>
         <div className={s.layer_3}></div>
         <div className={s.layer_text}>
+          <div
+            className={s.shadow}
+            style={{
+              backgroundImage: `url('${process.env.PUBLIC_URL}/paralax/shadow.png')`,
+            }}
+          ></div>
+
           <Logo className={s.logo} />
         </div>
       </div>
