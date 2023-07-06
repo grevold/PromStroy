@@ -3,7 +3,7 @@ import { useElementInViewPortListener } from "../../../../../../hooks/useElement
 
 import s from "./CircleDiagram.module.css";
 
-const countAnimationInterval = 20;
+const countAnimationInterval = 50;
 
 interface Props {
   persent: number;
@@ -13,7 +13,7 @@ interface Props {
 
 export function CircleDiagram({ persent, name, img }: Props) {
   const { ref, isElementInViewPort } =
-    useElementInViewPortListener<HTMLDivElement>(30);
+    useElementInViewPortListener<HTMLDivElement>(persent);
 
   const [count, setCount] = useState<number>(0);
   useEffect(() => {
