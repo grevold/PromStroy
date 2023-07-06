@@ -87,11 +87,4 @@
     composes: VisibleGeography;
     margin-top: 150px;
   }
-  .map {
-    display: block;
-    width: 1400px;
-    opacity: 30%;
-    position: absolute;
-    z-index: -1;
-  }
 }
