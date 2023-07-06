@@ -29,7 +29,7 @@
 .layer_dark {
   composes: layer;
   width: 100%;
-  transform: translateZ(-100px) scale(1.5);
+  transform: translateZ(100px) scale(1.5);
   background-color: rgba(0, 0, 0, 0.3);
 }
 .layer_2 {
@@ -52,25 +52,11 @@
   align-items: center;
   transition: transform 5s ease-in-out;
 }
-.shadow {
-  composes: layer;
-  filter: blur(200px);
-  opacity: 30%;
-  transform: translateZ(50px) scale(0.4);
-  top: 20px;
-}
 
 @media (min-width: 800px) {
-  .layer_dark {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
   .logo {
     width: 560px;
   }
-  .shadow {
-    opacity: 45%;
-  }
-
   .layer_2 {
     filter: blur(0px);
   }

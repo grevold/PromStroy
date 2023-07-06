@@ -57,10 +57,6 @@ export function History() {
             предприятий-клиентов по всей стране: от Калининграда до
             Владивостока.
           </span>
-          <img
-            className={s.map}
-            src={`${process.env.PUBLIC_URL}/history/mapRussia.png`}
-          />
         </div>
       </div>
     </div>

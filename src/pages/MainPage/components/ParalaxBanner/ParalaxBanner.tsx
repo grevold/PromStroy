@@ -32,22 +32,16 @@ export function ParalaxBanner() {
             backgroundImage: `url('${process.env.PUBLIC_URL}/paralax/sky.png')`,
           }}
         ></div>
-        <div className={s.layer_dark} />
+
         <div
           className={s.layer_2}
           style={{
             backgroundImage: `url('${process.env.PUBLIC_URL}/paralax/construction2.png')`,
           }}
         ></div>
-        <div className={s.layer_3}></div>
+        <div className={s.layer_dark} />
+        <div className={s.layer_3} />
         <div className={s.layer_text}>
-          <div
-            className={s.shadow}
-            style={{
-              backgroundImage: `url('${process.env.PUBLIC_URL}/paralax/shadow.png')`,
-            }}
-          ></div>
-
           <Logo className={s.logo} />
         </div>
       </div>
