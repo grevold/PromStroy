@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Logo } from "../../../../icons/Logo";
 
 import s from "./ParalaxBanner.module.css";
+import { ArrowDown } from "./components/ArrowDown/ArrowDown";
 
 export function ParalaxBanner() {
   const [MousePosition, setMousePosition] = useState({
@@ -43,6 +44,9 @@ export function ParalaxBanner() {
         <div className={s.layer_3} />
         <div className={s.layer_text}>
           <Logo className={s.logo} />
+        </div>
+        <div className={s.arrow}>
+          <ArrowDown />
         </div>
       </div>
     </div>

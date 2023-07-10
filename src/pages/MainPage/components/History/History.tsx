@@ -11,7 +11,7 @@ export function History() {
     useElementInViewPortListener<HTMLDivElement>(30);
 
   return (
-    <div className={s.root}>
+    <div className={s.root} id={"scroller"}>
       <div className={s.container}>
         <div className={s.age}>
           <div
