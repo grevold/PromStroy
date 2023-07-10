@@ -7,7 +7,12 @@ export function FormEmail() {
     e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .sendForm(
+        "service_6f56s68",
+        "template_3cy2rdi",
+        e.target,
+        "6xU0rvWinnDuAHQkq"
+      )
       .then(
         (result) => {
           window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
@@ -20,10 +25,12 @@ export function FormEmail() {
   return (
     <form className={s.root} onSubmit={sendEmail}>
       <input className={s.input} type="hidden" name="contact_number" />
-      <label className={s.label}>Имя</label>
+      <label className={s.label}>Ваше Имя Фамилия</label>
       <input className={s.input} type="text" name="from_name" />
-      <label className={s.label}>Email</label>
+      <label className={s.label}> Ваш Email</label>
       <input className={s.input} type="email" name="from_email" />
+      <label className={s.label}> Ваш телефон</label>
+      <input className={s.input} type="tel" name="from_tel" />
       <label className={s.label}>Сообщение</label>
       <textarea className={s.text} name="html_message" />
       <input className={s.button} type="submit" value="Отправить" />
