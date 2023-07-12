@@ -13,3 +13,14 @@
   padding-right: 20px;
   z-index: 20;
 }
+
+.unVisibleMenu {
+  display: flex !important;
+  margin-left: 400px;
+  transition: margin-left 1s ease-in-out;
+}
+.visibleMenu {
+  display: flex !important;
+  margin-left: 0;
+  transition: margin-left 1s ease-in-out;
+}

@@ -1,6 +1,12 @@
-export function EmailIcon() {
+interface Props {
+  className?: string;
+  onClose: () => void;
+}
+
+export function EmailIcon({ onClose }: Props) {
   return (
     <svg
+      onClick={onClose}
       width="51"
       height="23"
       viewBox="0 0 71 43"

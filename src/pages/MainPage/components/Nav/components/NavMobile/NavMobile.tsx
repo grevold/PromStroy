@@ -14,9 +14,14 @@ export function NavMobile({ className }: Props) {
   return (
     <div className={s.container}>
       <div className={cn(s.root, className)} onClick={handleClick}>
-        <Burger />
+        {!state && <Burger />}
       </div>
-      {state && <ModalMenu onClose={handleClick} />}
+      {state && (
+        <ModalMenu
+          className={state ? s.visibleMenu : s.unVisibleMenu}
+          onClose={handleClick}
+        />
+      )}
     </div>
   );
 }
