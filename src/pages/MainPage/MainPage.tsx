@@ -16,6 +16,7 @@ export function MainPage() {
       <Industries />
       <Reward />
       <BlockFormEmail />
+      <Industries />
     </div>
   );
 }
