@@ -11,17 +11,13 @@ interface Props {
 
 export function NavMobile({ className }: Props) {
   const { state, handleClick } = useNavMobile();
+
   return (
     <div className={s.container}>
       <div className={cn(s.root, className)} onClick={handleClick}>
         {!state && <Burger />}
       </div>
-      {state && (
-        <ModalMenu
-          className={state ? s.visibleMenu : s.unVisibleMenu}
-          onClose={handleClick}
-        />
-      )}
+      <ModalMenu onClose={handleClick} isOpened={state} />
     </div>
   );
 }
