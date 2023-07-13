@@ -3,16 +3,18 @@ import { Link } from "react-router-dom";
 import { EmailIcon } from "../../../../../../../../icons/EmailIcon";
 import { PhoneIcon } from "../../../../../../../../icons/PhoneIcon";
 import ScrollLock from "react-scrolllock";
+import cn from "classnames";
+import { useMemo } from "react";
 
 import s from "./ModalMenu.module.css";
 
 interface Props {
   className?: string;
   onClose: () => void;
-  isOpened: boolean;
+  isOpened: boolean | undefined;
 }
 
-export function ModalMenu({ onClose, isOpened }: Props) {
+export function ModalMenu({ className, onClose, isOpened }: Props) {
   const scrollToEmail = () => {
     onClose();
     window.scroll({
@@ -21,9 +23,15 @@ export function ModalMenu({ onClose, isOpened }: Props) {
     });
   };
 
+  const rootClassName = useMemo(() => {
+    if (isOpened === undefined) return cn(s.root, className);
+    if (isOpened === false) return cn(s.root_fadeOut, className);
+    return cn(s.root_fadeIn, className);
+  }, [isOpened, className]);
+
   return (
-    <ScrollLock isActive={isOpened}>
-      <div className={isOpened ? s.root_fadeIn : s.root_fadeOut}>
+    <ScrollLock isActive={isOpened === true}>
+      <div className={rootClassName}>
         <BurgerClose onClose={onClose} className={s.burgerIconClose} />
         <ul className={s.listLinks}>
           <li>

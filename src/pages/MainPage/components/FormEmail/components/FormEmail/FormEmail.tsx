@@ -1,4 +1,5 @@
 import emailjs from "emailjs-com";
+import { useForm } from "react-hook-form";
 
 import s from "./FormEmail.module.css";
 
