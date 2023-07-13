@@ -1,8 +1,15 @@
-export function PhoneIcon() {
+interface Props {
+  className?: string;
+  onClick?: () => void;
+}
+
+export function PhoneIcon({ className, onClick }: Props) {
   return (
     <svg
+      onClick={onClick}
       width="38"
       height="39"
+      className={className}
       viewBox="0 0 48 49"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

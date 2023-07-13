@@ -1,6 +1,6 @@
 interface Props {
   className?: string;
-  onClose: () => void;
+  onClose?: () => void;
 }
 
 export function EmailIcon({ onClose }: Props) {

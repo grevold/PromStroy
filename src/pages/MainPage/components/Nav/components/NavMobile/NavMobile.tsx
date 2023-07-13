@@ -17,7 +17,11 @@ export function NavMobile({ className }: Props) {
       <div className={cn(s.root, className)} onClick={handleClick}>
         {!state && <Burger />}
       </div>
-      <ModalMenu onClose={handleClick} isOpened={state} />
+      <ModalMenu
+        onClose={handleClick}
+        isOpened={state}
+        className={s.modalVisible}
+      />
     </div>
   );
 }

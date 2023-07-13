@@ -13,3 +13,9 @@
   padding-right: 20px;
   z-index: 20;
 }
+
+@media (min-width: 500px) {
+  .modalVisible {
+    display: none !important;
+  }
+}
