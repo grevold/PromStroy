@@ -15,7 +15,6 @@ export function NavDesktop({ className }: Props) {
       <div className={s.container}>
         <ul className={s.navigation}>
           <li className={s.link}>Реквизиты</li>
-          <li className={s.link}>Галерея</li>
           <li className={s.link}>Контакты</li>
         </ul>
         <ul className={s.contacts}>
