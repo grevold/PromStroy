@@ -5,6 +5,7 @@ import { ClientsBlock } from "./components/ClientsBlock/ClientsBlock";
 import { Reward } from "./components/Reward/Reward";
 import { BlockFormEmail } from "./components/FormEmail/BlockFormEmail";
 import { Nav } from "./components/Nav/Nav";
+import { Requisites } from "./components/Requisites/Requisites";
 
 export function MainPage() {
   return (
@@ -15,6 +16,7 @@ export function MainPage() {
       <ClientsBlock />
       <Industries />
       <Reward />
+      <Requisites />
       <BlockFormEmail />
     </div>
   );
