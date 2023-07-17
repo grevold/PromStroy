@@ -34,7 +34,7 @@
   padding: 10px;
   margin-top: 5px;
 }
-.button {
+.buttonUnLock {
   height: 50px;
   width: 100%;
   max-width: 150px;
@@ -49,12 +49,22 @@
   background-color: rgba(0, 52, 255, 1);
   cursor: pointer;
 }
+.buttonUnLock:hover {
+  background-color: rgb(86, 120, 255);
+}
+.buttonLock {
+  composes: buttonUnLock;
+  background-color: rgb(154, 154, 154);
+}
+.error_message {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Verdana, Tahoma, sans-serif;
+  color: rgb(252, 78, 78);
+}
 
 @media (min-width: 800px) {
   .root {
     max-width: 600px;
-  }
-  .button:hover {
-    background-color: rgb(86, 120, 255);
   }
 }
