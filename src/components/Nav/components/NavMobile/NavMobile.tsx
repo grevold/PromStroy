@@ -1,6 +1,6 @@
 import cn from "classnames";
 import { useNavMobile } from "./useNavMobile";
-import { Burger } from "../../../../../../icons/Burger";
+import { Burger } from "./../../../../icons/Burger";
 
 import s from "./NavMobile.module.css";
 import { ModalMenu } from "./components/ModalMenu/ModalMenu";

@@ -26,7 +26,7 @@
 }
 .navigation {
   width: 100%;
-  max-width: 230px;
+  max-width: 400px;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -36,8 +36,18 @@
   color: white;
   font-size: 20px;
   font-weight: 300;
+  height: 30px;
   font-family: Verdana, Tahoma, sans-serif;
+  cursor: pointer;
+  border-bottom: solid rgba(255, 255, 255, 0);
+  transition: border-bottom 0.3s ease-in-out;
+  width: 100px;
+  text-decoration: none;
 }
+.link:hover {
+  border-bottom: solid rgba(255, 255, 255, 1);
+}
+
 .contacts {
   width: 100%;
   max-width: 150px;
