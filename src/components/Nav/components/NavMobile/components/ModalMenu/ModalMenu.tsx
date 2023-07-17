@@ -1,12 +1,13 @@
-import { BurgerClose } from "../../../../../../../../icons/BurgerClose";
+import { BurgerClose } from "./../../../../../../icons/BurgerClose";
 import { Link } from "react-router-dom";
-import { EmailIcon } from "../../../../../../../../icons/EmailIcon";
-import { PhoneIcon } from "../../../../../../../../icons/PhoneIcon";
+import { EmailIcon } from "./../../../../../../icons/EmailIcon";
+import { PhoneIcon } from "./../../../../../../icons/PhoneIcon";
 import ScrollLock from "react-scrolllock";
 import cn from "classnames";
 import { useMemo } from "react";
 
 import s from "./ModalMenu.module.css";
+import { RoutePath } from "../../../../../../types";
 
 interface Props {
   className?: string;
@@ -35,17 +36,17 @@ export function ModalMenu({ className, onClose, isOpened }: Props) {
         <BurgerClose onClose={onClose} className={s.burgerIconClose} />
         <ul className={s.listLinks}>
           <li>
-            <Link className={s.link} to="">
+            <Link className={s.link} to={RoutePath.MainPage}>
               Главная
             </Link>
           </li>
           <li>
-            <Link className={s.link} to="">
-              Галерея
+            <Link className={s.link} to={RoutePath.RequisitesPage}>
+              Реквизиты
             </Link>
           </li>
           <li>
-            <Link className={s.link} to="">
+            <Link className={s.link} to={RoutePath.ContactsPage}>
               Контакты
             </Link>
           </li>

@@ -1,8 +1,10 @@
 import cn from "classnames";
 import s from "./NavDesktop.module.css";
-import { PhoneIcon } from "../../../../../../icons/PhoneIcon";
-import { EmailIcon } from "../../../../../../icons/EmailIcon";
+import { PhoneIcon } from "./../../../../icons/PhoneIcon";
+import { EmailIcon } from "./../../../../icons/EmailIcon";
 import { useNavDesktop } from "./useNavDesktop";
+import { Link } from "react-router-dom";
+import { RoutePath } from "../../../../types";
 
 interface Props {
   className?: string;
@@ -14,8 +16,21 @@ export function NavDesktop({ className }: Props) {
     <div className={cn(s.root, className)}>
       <div className={s.container}>
         <ul className={s.navigation}>
-          <li className={s.link}>Реквизиты</li>
-          <li className={s.link}>Контакты</li>
+          <li>
+            <Link className={s.link} to={RoutePath.MainPage}>
+              Главная
+            </Link>
+          </li>
+          <li>
+            <Link className={s.link} to={RoutePath.RequisitesPage}>
+              Реквизиты
+            </Link>
+          </li>
+          <li>
+            <Link className={s.link} to={RoutePath.ContactsPage}>
+              Контакты
+            </Link>
+          </li>
         </ul>
         <ul className={s.contacts}>
           <li onClick={handleClickTel} className={s.tel}>

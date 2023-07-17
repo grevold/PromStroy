@@ -4,8 +4,8 @@ import { Industries } from "./components/Industries/Industries";
 import { ClientsBlock } from "./components/ClientsBlock/ClientsBlock";
 import { Reward } from "./components/Reward/Reward";
 import { BlockFormEmail } from "./components/FormEmail/BlockFormEmail";
-import { Nav } from "./components/Nav/Nav";
 import { Requisites } from "./components/Requisites/Requisites";
+import { Nav } from "../../components/Nav/Nav";
 
 export function MainPage() {
   return (
