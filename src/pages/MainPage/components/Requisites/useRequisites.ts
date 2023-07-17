@@ -2,8 +2,16 @@ import { useState, useEffect } from "react";
 
 export function useRequisites() {
   const [state, setState] = useState(false);
-  const interval = setInterval(() => {
-    setState(!state);
-  }, 1000);
+
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      setState((prevState) => !prevState);
+    }, 1000);
+
+    return () => {
+      window.clearInterval(interval);
+    };
+  }, []);
+
   return { state };
 }
