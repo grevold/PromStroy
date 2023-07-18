@@ -1,3 +1,4 @@
+import { Footer } from "../../components/Footer/Footer";
 import { Nav } from "../../components/Nav/Nav";
 import { ContactsPageContent } from "./components/ContactsPageContent/ContactsPageContent";
 
@@ -8,6 +9,7 @@ export function ContactsPage() {
     <>
       <Nav />
       <ContactsPageContent />
+      <Footer />
     </>
   );
 }

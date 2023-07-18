@@ -2,11 +2,17 @@ import { useState } from "react";
 import s from "./Requisites.module.css";
 import { useRequisites } from "./useRequisites";
 
-export function Requisites() {
+import cn from "classnames";
+
+interface Props {
+  className?: string;
+}
+
+export function Requisites({ className }: Props) {
   const { state } = useRequisites();
 
   return (
-    <div className={s.root}>
+    <div className={cn(s.root, className)}>
       <span className={s.header}>
         Вы можете скачать PDF-файл с реквизитами компании
       </span>
