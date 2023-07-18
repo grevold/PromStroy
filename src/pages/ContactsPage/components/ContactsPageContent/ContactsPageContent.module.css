@@ -27,6 +27,12 @@
   height: 30px;
   font-family: Verdana, Tahoma, sans-serif;
 }
+.sub_header {
+  font-weight: 600;
+  height: 18px;
+  font-family: Verdana, Tahoma, sans-serif;
+  margin-top: 40px;
+}
 .text_addresses {
   display: flex;
   flex-direction: column;
@@ -45,8 +51,10 @@
 .address {
   font-weight: 300;
   height: 16px;
+  font-size: 18px;
   font-family: Verdana, Tahoma, sans-serif;
   margin-top: 10px;
+  color: rgb(62, 62, 62);
 }
 
 @media (min-width: 600px) {
