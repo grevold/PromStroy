@@ -54,7 +54,7 @@ export function ModalMenu({ className, onClose, isOpened }: Props) {
             <button className={s.circle}>
               <EmailIcon onClose={scrollToEmail} />
             </button>
-            <a className={s.circle} href="tel:+79001111111">
+            <a className={s.circle} href="tel:+73512474690">
               <PhoneIcon />
             </a>
           </li>
