@@ -2,7 +2,7 @@
   "name": "template-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://grevold.github.io/FrontCloudCamp/",
+  "homepage": "https://grevold.github.io/PromStroy/",
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
     "@pbe/react-yandex-maps": "^1.2.4",
