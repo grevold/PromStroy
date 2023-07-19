@@ -52,15 +52,17 @@ export const FormEmail = forwardRef<HTMLFormElement, Props>(
           <div className={s.error_message}>{errors.from_email?.message}</div>
         )}
         <label className={s.label}> Ваш телефон</label>
+
         <input
           {...withHookFormMask(register("from_phone"), [
             "+7 999 999-99-99",
             "+7 999 999-99-99",
           ])}
+          type="text"
           className={s.input}
-          type="tel"
           placeholder="+7 999 999-99-99"
         />
+
         {errors.from_phone?.message && (
           <div className={s.error_message}>{errors.from_phone?.message}</div>
         )}
