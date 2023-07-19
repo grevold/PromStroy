@@ -28,7 +28,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 .VisibleGeography {
   display: flex;
@@ -53,12 +53,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 0;
-    transition: margin-top 1s ease-in-out;
+    padding-top: 0;
+    transition: padding-top 1s ease-in-out;
   }
   .UnVisibleBlock {
     composes: VisibleBlock;
-    margin-top: 150px;
+    padding-top: 150px;
   }
   .text {
     text-align: start;
@@ -74,8 +74,8 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 100px;
-    transition: margin-top 1s ease-in-out;
+    padding-top: 100px;
+    transition: padding-top 1s ease-in-out;
     position: relative;
   }
   .text_geography {
@@ -85,6 +85,6 @@
   }
   .UnVisibleGeography {
     composes: VisibleGeography;
-    margin-top: 150px;
+    padding-top: 150px;
   }
 }
