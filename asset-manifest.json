@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/PromStroy/static/css/main.14e95409.css",
-    "main.js": "/PromStroy/static/js/main.3b75b82d.js",
+    "main.js": "/PromStroy/static/js/main.ae507ad0.js",
     "static/js/787.0217c058.chunk.js": "/PromStroy/static/js/787.0217c058.chunk.js",
     "index.html": "/PromStroy/index.html",
     "main.14e95409.css.map": "/PromStroy/static/css/main.14e95409.css.map",
-    "main.3b75b82d.js.map": "/PromStroy/static/js/main.3b75b82d.js.map",
+    "main.ae507ad0.js.map": "/PromStroy/static/js/main.ae507ad0.js.map",
     "787.0217c058.chunk.js.map": "/PromStroy/static/js/787.0217c058.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.14e95409.css",
-    "static/js/main.3b75b82d.js"
+    "static/js/main.ae507ad0.js"
   ]
 }
