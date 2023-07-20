@@ -5,7 +5,7 @@
   border: 11px solid transparent;
   transform: rotate(45deg);
   position: relative;
-  margin: 25vh auto;
+  margin: 30vh auto;
 }
 
 .arrowCta:after,
@@ -20,8 +20,8 @@
 }
 
 .arrowCta:after {
-  border-bottom: 3px solid white;
-  border-right: 3px solid white;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  border-right: 3px solid rgb(255, 255, 255);
   top: 0;
   left: 0;
   opacity: 1;
@@ -73,5 +73,17 @@
   100% {
     opacity: 1;
     transform: translate(0, 0);
+  }
+}
+
+@media (min-width: 800px) {
+  .arrowCta {
+    margin: 40vh auto;
+  }
+}
+
+@media (min-width: 1900px) {
+  .arrowCta {
+    margin: 50vh auto;
   }
 }
