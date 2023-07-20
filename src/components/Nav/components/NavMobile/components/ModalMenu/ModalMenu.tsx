@@ -19,7 +19,7 @@ export function ModalMenu({ className, onClose, isOpened }: Props) {
   const scrollToEmail = () => {
     onClose();
     window.scroll({
-      top: 5570,
+      top: 5070,
       behavior: "smooth",
     });
   };
