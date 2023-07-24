@@ -2,6 +2,7 @@ export enum RoutePath {
   MainPage = "/",
   ContactsPage = "/contacts",
   RequisitesPage = "/requisites",
+  EmailPage = "/emailpage",
 }
 
 export interface ProductBanner {

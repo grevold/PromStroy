@@ -4,10 +4,15 @@ import { RoutePath } from "../../types";
 import { Logo } from "../../icons/Logo";
 import { PhoneIcon } from "../../icons/PhoneIcon";
 import { EmailIcon } from "../../icons/EmailIcon";
+import cn from "classnames";
 
-export function Footer() {
+interface Props {
+  className?: string;
+}
+
+export function Footer({ className }: Props) {
   return (
-    <div className={s.root}>
+    <div className={cn(s.root, className)}>
       <div className={s.container}>
         <ul className={s.nav}>
           <li>

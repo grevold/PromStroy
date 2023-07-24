@@ -42,8 +42,11 @@ export function NavDesktop({ className }: Props) {
             )}
           </li>
 
-          <li className={s.email} onClick={handleClickEmail}>
-            <EmailIcon />
+          <li className={s.email}>
+            <Link to={RoutePath.EmailPage}>
+              <EmailIcon />
+            </Link>
+
             {state.email ? (
               <span className={s.telNumber}>metall.promstroy74@gmail.com</span>
             ) : (
