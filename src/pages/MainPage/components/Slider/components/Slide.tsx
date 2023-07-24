@@ -17,6 +17,7 @@ export function Slide({ product }: Props) {
           <div className={s.icons}>
             {product.icons.map((icon) => (
               <img
+                key={icon}
                 className={s.icon}
                 src={`${process.env.PUBLIC_URL}/slider/labels/${icon}`}
               />

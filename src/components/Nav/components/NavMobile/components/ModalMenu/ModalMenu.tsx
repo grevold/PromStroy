@@ -16,14 +16,6 @@ interface Props {
 }
 
 export function ModalMenu({ className, onClose, isOpened }: Props) {
-  const scrollToEmail = () => {
-    onClose();
-    window.scroll({
-      top: 5650,
-      behavior: "smooth",
-    });
-  };
-
   const rootClassName = useMemo(() => {
     if (isOpened === undefined) return cn(s.root, className);
     if (isOpened === false) return cn(s.root_fadeOut, className);
@@ -36,23 +28,33 @@ export function ModalMenu({ className, onClose, isOpened }: Props) {
         <BurgerClose onClose={onClose} className={s.burgerIconClose} />
         <ul className={s.listLinks}>
           <li>
-            <Link className={s.link} to={RoutePath.MainPage}>
+            <Link className={s.link} to={RoutePath.MainPage} onClick={onClose}>
               Главная
             </Link>
           </li>
           <li>
-            <Link className={s.link} to={RoutePath.RequisitesPage}>
+            <Link
+              className={s.link}
+              to={RoutePath.RequisitesPage}
+              onClick={onClose}
+            >
               Реквизиты
             </Link>
           </li>
           <li>
-            <Link className={s.link} to={RoutePath.ContactsPage}>
+            <Link
+              className={s.link}
+              to={RoutePath.ContactsPage}
+              onClick={onClose}
+            >
               Контакты
             </Link>
           </li>
           <li className={s.blockFeedback}>
             <button className={s.circle}>
-              <EmailIcon onClose={scrollToEmail} />
+              <Link to={RoutePath.EmailPage} onClick={onClose}>
+                <EmailIcon />
+              </Link>
             </button>
             <a className={s.circle} href="tel:+73512474690">
               <PhoneIcon />
