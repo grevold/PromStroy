@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: black;
 }
 .container {
   margin-top: 100px;
@@ -30,11 +31,13 @@
   font-weight: 600;
   height: 30px;
   font-family: Verdana, Tahoma, sans-serif;
+  color: black;
 }
 .sub_header {
   font-weight: 600;
   font-family: Verdana, Tahoma, sans-serif;
   margin-top: 40px;
+  color: black;
 }
 .text_addresses {
   display: flex;
@@ -50,6 +53,7 @@
   font-weight: 600;
   height: 18px;
   font-family: Verdana, Tahoma, sans-serif;
+  color: black;
 }
 .address {
   font-weight: 300;
