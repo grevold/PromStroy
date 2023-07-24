@@ -3,3 +3,11 @@ export enum RoutePath {
   ContactsPage = "/contacts",
   RequisitesPage = "/requisites",
 }
+
+export interface ProductBanner {
+  title: string;
+  marks: string;
+  products: string;
+  product_bg: string;
+  icons: string[];
+}
