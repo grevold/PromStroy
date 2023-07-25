@@ -1,18 +1,18 @@
 import { texts } from "../../../../texts";
 import { Swiper, SwiperProps, SwiperSlide } from "swiper/react";
 import { Slide } from "./components/Slide";
-import { Autoplay, Pagination } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 import { useSlider } from "./useSlider";
 
 import s from "./Slider.module.css";
 
 const swiperConfig: SwiperProps = {
-  modules: [Autoplay, Pagination],
+  modules: [Autoplay, Pagination, Navigation],
   onAutoplayTimeLeft: function () {},
   spaceBetween: 0,
   centeredSlides: true,
   autoplay: {
-    delay: 5000,
+    delay: 6000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -20,6 +20,8 @@ const swiperConfig: SwiperProps = {
   },
   direction: "horizontal",
   speed: 1200,
+  navigation: true,
+  loop: true,
 };
 
 export function Slider() {

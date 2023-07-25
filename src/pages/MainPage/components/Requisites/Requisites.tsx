@@ -1,4 +1,3 @@
-import { useState } from "react";
 import s from "./Requisites.module.css";
 import { useRequisites } from "./useRequisites";
 
@@ -18,7 +17,7 @@ export function Requisites({ className }: Props) {
       </span>
       <a
         className={s.container}
-        href="/requisites/Requisites_Prom_Stroy.pdf"
+        href={`${process.env.PUBLIC_URL}/requisites/Requisites_Prom_Stroy.pdf`}
         download
       >
         <img
