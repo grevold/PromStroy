@@ -1,5 +1,13 @@
-import { ContactsPageContent } from "./components/ContactsPageContent/ContactsPageContent";
+import { BlockFormEmail } from "../MainPage/components/FormEmail/BlockFormEmail";
+import { BlockPhones } from "./components/BlockPhones/BlockPhones";
+import { Location } from "./components/Location/Location";
 
 export function ContactsPage() {
-  return <ContactsPageContent />;
+  return (
+    <>
+      <Location />
+      <BlockPhones />
+      <BlockFormEmail />
+    </>
+  );
 }

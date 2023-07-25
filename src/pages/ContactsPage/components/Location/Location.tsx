@@ -1,8 +1,8 @@
 import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 
-import s from "./ContactsPageContent.module.css";
+import s from "./Location.module.css";
 
-export function ContactsPageContent() {
+export function Location() {
   return (
     <YMaps>
       <div className={s.root}>

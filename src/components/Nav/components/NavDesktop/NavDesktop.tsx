@@ -38,19 +38,16 @@ export function NavDesktop({ className }: Props) {
             {state.tel ? (
               <span className={s.telNumber}>+79518131863</span>
             ) : (
-              <span className={s.unVisibleTelNumber}>+79518131863</span>
+              <span className={s.unVisibleTelNumber}></span>
             )}
           </li>
 
-          <li className={s.email}>
-            <Link to={RoutePath.EmailPage}>
-              <EmailIcon />
-            </Link>
-
+          <li className={s.email} onClick={handleClickEmail}>
+            <EmailIcon />
             {state.email ? (
-              <span className={s.telNumber}>metall.promstroy74@gmail.com</span>
+              <span className={s.telNumber}>metall@promstroy74.ru</span>
             ) : (
-              <span className={s.unVisibleTelNumber}>+79518131863</span>
+              <span className={s.unVisibleTelNumber}></span>
             )}
           </li>
         </ul>
