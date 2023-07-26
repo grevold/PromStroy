@@ -5,6 +5,7 @@ import { EmailIcon } from "./../../../../icons/EmailIcon";
 import { useNavDesktop } from "./useNavDesktop";
 import { Link } from "react-router-dom";
 import { RoutePath } from "../../../../types";
+import { Logo25 } from "../../../../icons/Logo25";
 
 interface Props {
   className?: string;
@@ -32,6 +33,7 @@ export function NavDesktop({ className }: Props) {
             </Link>
           </li>
         </ul>
+        <Logo25 className={s.logo25} />
         <ul className={s.contacts}>
           <li onClick={handleClickTel} className={s.tel}>
             <PhoneIcon />

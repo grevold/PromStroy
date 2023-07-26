@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Logo } from "../../../../icons/Logo";
+import { WhiteLogo } from "../../../../icons/WhiteLogo";
 
 import s from "./ParalaxBanner.module.css";
 import { ArrowDown } from "./components/ArrowDown/ArrowDown";
@@ -33,7 +33,7 @@ export function ParalaxBanner() {
           <div className={s.layer_dark} />
           <div className={s.layer_3} />
           <div className={s.layer_text}>
-            <Logo className={s.logo} />
+            <WhiteLogo className={s.logo} />
           </div>
           <div className={s.arrow}>
             <ArrowDown />
@@ -72,7 +72,7 @@ export function ParalaxBanner() {
         <div className={s.layer_dark} />
         <div className={s.layer_3} />
         <div className={s.layer_text}>
-          <Logo className={s.logo} />
+          <WhiteLogo className={s.logo} />
         </div>
         <div className={s.arrow}>
           <ArrowDown />
