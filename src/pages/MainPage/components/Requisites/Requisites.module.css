@@ -34,15 +34,14 @@
 }
 .shadowBlock {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: #0034ff;
   filter: blur(60px);
   z-index: 1;
-  top: 0px;
+  top: -30px;
   left: auto;
-  bottom: 200px;
   right: auto;
   opacity: 100;
   transition: opacity 1s ease-in-out;
