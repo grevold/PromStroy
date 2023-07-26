@@ -20,13 +20,7 @@ export function RequisitesPage() {
       <div className={s.root}>
         <div className={s.container}>
           <h1 className={s.header}>Реквизиты</h1>
-          <button
-            className={state ? s.buttonDown : s.button}
-            onClick={handleClick}
-          >
-            <span>{state ? "Скрыть" : "Развернуть"}</span>
-            {state ? <ArrowUp /> : <ArrowDown />}
-          </button>
+
           <div className={state ? s.tableRequisites : s.hiddenTableRequisites}>
             {texts.Requisites.map((requisit) => (
               <div className={s.row} key={requisit.title}>
@@ -35,7 +29,11 @@ export function RequisitesPage() {
               </div>
             ))}
           </div>
-          <div className={state ? s.blurBlockUnVisible : s.blurBlock}></div>
+          <button className={s.button} onClick={handleClick}>
+            <span>{state ? "Скрыть" : "Развернуть"}</span>
+            {state ? <ArrowUp /> : <ArrowDown />}
+          </button>
+
           <Requisites />
         </div>
       </div>
