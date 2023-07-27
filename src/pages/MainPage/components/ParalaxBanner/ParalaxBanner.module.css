@@ -10,7 +10,7 @@
 .logo {
   width: 230px;
   margin-left: 10px;
-  transform: translateZ(300px) scale(1);
+  transform: translateZ(300px);
 }
 
 .layer {
@@ -45,7 +45,7 @@
 }
 .layer_text {
   composes: layer;
-  transform: translateZ(200px) scale(1);
+  transform: translateZ(200px);
   z-index: 9;
   display: flex;
   flex-direction: column;
@@ -56,18 +56,28 @@
 }
 .arrow {
   composes: layer;
-  transform: translateZ(205px) scale(1);
+  transform: translateZ(205px);
   z-index: 9;
   top: 300px;
   cursor: pointer;
 }
+@media (min-width: 500px) {
+  .logo {
+    width: 330px;
+  }
+}
 
 @media (min-width: 800px) {
   .logo {
-    width: 560px;
+    width: 460px;
     margin-left: 0;
   }
   .layer_2 {
     filter: blur(0px);
+  }
+}
+@media (min-width: 1200px) {
+  .logo {
+    width: 560px;
   }
 }
