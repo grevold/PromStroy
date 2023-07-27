@@ -89,3 +89,14 @@
 .logo25 {
   width: 100px;
 }
+
+@media (min-width: 800px) {
+  .container {
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    justify-content: space-between;
+  }
+}
