@@ -17,7 +17,7 @@
   max-width: 300px;
   font-size: 16px;
   font-weight: 600;
-  text-align: center;
+  text-align: start;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 30px;
   color: black;
@@ -41,7 +41,7 @@
   display: none;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .age {
     display: flex;
     justify-content: start;
@@ -81,7 +81,7 @@
   }
   .text_geography {
     composes: text;
-    font-size: 25px;
+    font-size: 20px;
     max-width: 500px;
   }
   .UnVisibleGeography {

@@ -73,6 +73,10 @@
   transition: top 0.5s ease-in-out;
   color: white;
 }
+.telNumber2 {
+  composes: telNumber;
+  top: 120px;
+}
 .email {
   cursor: pointer;
   color: white;
@@ -88,6 +92,12 @@
 }
 .logo25 {
   width: 100px;
+}
+.telephonesBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 800px) {
