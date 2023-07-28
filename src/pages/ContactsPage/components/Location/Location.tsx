@@ -13,20 +13,20 @@ export function Location() {
               <h2 className={s.sub_header}>Наше местоположение:</h2>
               <div className={s.text_addresses}>
                 <div className={s.row_addresses}>
-                  <span className={s.address_head}>Офис:</span>
+                  <span className={s.address_head}>Офис: </span>
                   <span className={s.address}>
                     г.Челябинск, ул.Курчатова, д.23-Б, оф.901
                   </span>
                 </div>
                 <div className={s.row_addresses}>
-                  <span className={s.address_head}>Склад:</span>
+                  <span className={s.address_head}>Склад: </span>
                   <span className={s.address}>
                     Станция "Челябинск-Грузовой" ЮУЖД, код станции: 800101, код
                     предприятия: 1610
                   </span>
                 </div>
                 <div className={s.row_addresses}>
-                  <span className={s.address_head}>Дла автомобилей:</span>
+                  <span className={s.address_head}>Дла автомобилей: </span>
                   <span className={s.address}>
                     проходная напротив Троицкий тр. 21-Б, (поворот на дорогу к
                     станции после Троицкого тр. 21 (ТК "Челси"), если ехать от

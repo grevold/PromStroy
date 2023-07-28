@@ -38,7 +38,10 @@ export function NavDesktop({ className }: Props) {
           <li onClick={handleClickTel} className={s.tel}>
             <PhoneIcon />
             {state.tel ? (
-              <span className={s.telNumber}>+79518131863</span>
+              <div className={s.telephonesBlock}>
+                <span className={s.telNumber}>+7 351 247 46-90</span>
+                <span className={s.telNumber2}>+7 351 247 46-91</span>
+              </div>
             ) : (
               <span className={s.unVisibleTelNumber}></span>
             )}

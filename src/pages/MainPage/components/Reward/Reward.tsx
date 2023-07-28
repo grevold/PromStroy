@@ -9,8 +9,8 @@ export function Reward() {
     return (
       <div className={s.visibleRoot}>
         <span className={s.text}>
-          «Промышленное строительство» - надёжный поставщик по версии ЭТП
-          Фабрикант
+          «Промышленное строительство» - обладатель звания "Надёжный поставщик"
+          по версии ЭТП "Фабрикант" на протяжении нескольких лет.
         </span>
         <img
           className={s.img}
@@ -25,8 +25,8 @@ export function Reward() {
       className={isElementInViewPort1 ? s.visibleRoot : s.unVisibleRoot}
     >
       <span className={s.text}>
-        «Промышленное строительство» - надёжный поставщик по версии ЭТП
-        Фабрикант
+        «Промышленное строительство» - обладатель звания "Надёжный поставщик" по
+        версии ЭТП "Фабрикант" на протяжении нескольких лет.
       </span>
       <img
         className={s.img}

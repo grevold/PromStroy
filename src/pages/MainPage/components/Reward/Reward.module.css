@@ -53,9 +53,9 @@
   }
   .text {
     text-align: start;
-    font-size: 28px;
+    font-size: 20px;
     margin-right: 50px;
-    margin-left: 50px;
+    margin-left: 10px;
     max-width: 500px;
   }
   .img {
@@ -65,27 +65,29 @@
 @media (min-width: 1000px) {
   .visibleRoot {
     justify-content: space-between;
+    max-width: 800px;
   }
   .img {
     width: 500px;
   }
   .text {
-    font-size: 28px;
+    font-size: 20px;
     margin-right: 60px;
     margin-left: 50px;
   }
 }
 @media (min-width: 1200px) {
   .visibleRoot {
-    max-width: 900px;
+    max-width: 1000px;
     justify-content: space-between;
   }
   .img {
     width: 500px;
   }
   .text {
-    font-size: 28px;
+    font-size: 24px;
     margin-right: 120px;
     margin-left: 50px;
+    max-width: 800px;
   }
 }

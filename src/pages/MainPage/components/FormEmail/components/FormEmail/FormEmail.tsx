@@ -41,7 +41,7 @@ export const FormEmail = forwardRef<HTMLFormElement, Props>(
     const { errors } = formState;
     return (
       <form className={s.root} onSubmit={submit} ref={ref}>
-        <label className={s.label}>Ваше Имя Фамилия</label>
+        <label className={s.label}>Имя (Организация)</label>
         <input className={s.input} type="text" {...register("from_name")} />
         {errors.from_name?.message && (
           <div className={s.error_message}>{errors.from_name?.message}</div>
